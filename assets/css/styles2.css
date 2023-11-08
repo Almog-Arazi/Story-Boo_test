@@ -112,7 +112,7 @@
   .card:hover .wrapper::after {
     height: 120px;
   }
-  
+
   .title {
     width: 105%;
     transition: transform 0.5s;
@@ -154,13 +154,13 @@
   }
   
   
-  @media (max-width: 768px) {
+  @media (max-width: 768px) /* Moblie */ {
   .all{
     background-color: rgba(250, 235, 215, 0.445);
     margin: 2%;
     padding: 2%;
     border-radius: 2%;
-    margin-top: 150px;
+    margin-top: 3500px;
     
   }
   .card-container {
