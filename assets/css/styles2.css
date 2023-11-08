@@ -112,11 +112,26 @@
   .card:hover .wrapper::after {
     height: 120px;
   }
+  
   .title {
-    width: 100%;
+    width: 105%;
     transition: transform 0.5s;
     position: relative;
     margin-top: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: bolder;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  
+  .title2 {
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    color: aliceblue;
   }
   .card:hover .title {
     transform: translate3d(0%, -50px, 100px);
