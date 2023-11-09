@@ -510,9 +510,65 @@ width: 170px;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px) {
+ .container{
+  margin-inline: 1rem;
+ }
 
+ .nav__menu{
+  padding-inline: 3rem;
+ }
+
+.discount__img-1{
+  width: 150px;
+  
+}
+.discount__img-2{
+  width: 140px;
+ }
+}
 
 /* For medium devices */
+@media screen and (min-width: 768px) {
+ .services__container{
+  grid-template-columns:repeat(3,max-content);
+  justify-content: center;
+  column-gap: 1rem;
+ }
+
+ .services__description{
+  width: 350px;
+ }
+ .discount__img-1{
+  width: 280px;
+ }
+
+.discount__img-2{
+  width: 250px;
+ }
+
+ .discount__container{
+  grid-template-columns: 655px 500px;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .discount__description{
+  font-size: 1.5rem;
+  font-weight: bolder;
+ }
+
+ .story-boo-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #000; /* Adjust the border color and width as needed */
+  border-radius: 0.375rem; /* 3 is equivalent to rounded-3 in Bootstrap */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Adjust shadow as needed */
+  margin: 1rem auto; /* Center the image horizontally and add margin as needed */
+  display: block; /* Ensure the image is a block element for margin auto to work */
+}
+
+}
 
 
 /* For large devices */
