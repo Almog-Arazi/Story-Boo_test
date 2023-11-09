@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Ubuntu:wght@400;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Paytone+One&family=Ubuntu:wght@400;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -19,6 +20,7 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Ubuntu", sans-serif;
   --second-font: "League Spartan", serif;
+  --title-font: 'Paytone One', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -189,7 +191,7 @@ img {
 .logo_text{
   font-weight: bold;
   font-size: 1.25rem;
-  font-family: var(--second-font);
+  font-family: var(--title-font);
   display: flex;
   left: 0;
 }
@@ -414,18 +416,80 @@ img {
   transform: translate3d(0%, -30%, 100px);
 }
 
-/*=============== FEATURED ===============*/
+/*=============== SERVICES ===============*/
 
+.services__container{
+ row-gap: 3rem;
+}
 
-/* Swiper class */
+.services__card{
+  text-align: center;
+}
+.services__card i{
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.services__description{
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
 
 
 /*=============== DISCOUNT ===============*/
+.discount__container{
+row-gap: 3.5rem;
+background-color: antiquewhite;
+padding: 100px;
+}
 
+.discount__data{
+  text-align: center;
+}
+
+.discount__title{
+  margin-bottom: 1rem;
+}
+
+.discount__description{
+  margin-bottom: 2rem;
+}
+
+.discount__images{
+  display: flex;
+  justify-content: center;
+}
+
+.discount__img-1,
+.discount__img-2{
+width: 170px;
+}
+
+.discount__img-1{
+  transform: translateX(1rem) rotate(-10deg);
+}
+
+.discount__img-2{
+  transform: translateX(-1rem) rotate(+10deg);
+}
 
 /*=============== NEW ===============*/
+.section__description{
+  margin-bottom: 2rem;
+}
 
 
+.section__data{
+  text-align: center;
+  padding: 20px;
+}
 /*=============== JOIN ===============*/
 
 

@@ -1,155 +1,30 @@
-========== HEADER ==========
-.nav__logo
-E-Book
+========== Story boo ==========
+story BOO: Your Child's Magical Adventure Begins Here!
 
-.nav__link
-Home - Featured - Discount - New Books - Testimonial
+Welcome to Story BOO, where AI meets imagination to craft enchanting children's stories. Dive into a world where your child is the hero, and every story is a personalized adventure.
 
+How It Works:
 
-========== SEARCH  ==========
-.search__input placeholder
-What are you looking for?
+Choose Your Hero: Select from a delightful array of characters - be it a lion, a superhero,a princess, or even a pirate!
 
+Set the Stage: Pick the setting for your child's adventure, from magical forests to outer space or a bustling elf city.
 
-========== LOGIN ==========
-login__title
-Log In
+Personalize the Story: Add your hero's name, determine the story length, and choose the style model - whether it's Disney-Pixar, Anime, or something uniquely magical!
 
-.login__label placeholder
-Email
-Write your email
+Create Your Story: Hit the "Create Story" button, and let the AI weave its magic to generate a one-of-a-kind children's book.
 
-Password
-Enter your password
+Why Story BOO:
 
-.login__signup
-You do not have an account? <a href="#">Sign up</a>
+Immersive Adventures: Spark your child's imagination with visually stunning stories set in diverse and captivating worlds.
 
-.login__forgot
-You forgot your password
+Safe and Engaging: Enjoy a secure and ad-free environment, ensuring a wholesome experience for your little one.
 
-.login__button
-Log In
+Educational Fun: Each story is designed to be not just entertaining but also educational, encouraging learning through play.
 
-========== HOME ==========
-.home__title
-Browse & <br>
-Select E-Books
+Get Started Today:
 
-.home__description
-Find the best e-books from your favorite 
-writers, explore hundreds of books with all 
-possible categories, take advantage of the 
-50% discount and much more. 
+Begin your child's journey into the world of Story BOO. Create magical moments and lasting memories with personalized children's stories.
 
-.button
-Explore Now
+Ready to see your child become the hero of their own tale? Start crafting their adventure now!
 
-
-========== SERVICES ==========
-.services__title .services__description
-Free Shipping
-Order More Than $100
-
-Secure Payment
-100% Secure Payment
-
-24/7 Support
-Call us anytime
-
-
-========== FEATURED ==========
-.section__title
-Featured Books
-
-.featured__title .featured__discount .featured__price
-Featured Book
-$11.99
-$19.99
-
-.button
-Add To Cart
-
-
-========== DISCOUNT ==========
-.section__title
-Up To 50% Discount 
-
-.discount__description
-Take advantage of the discount days we 
-have for you, buy books from your favorite 
-writers, the more you buy, the more 
-discounts we have for you.
-
-.button
-Shop Now
-
-
-========== NEW BOOKS ==========
-.section__title
-New Books
-
-.new__title .new__discount .new__price
-New Book
-$7.99
-$14.99
-
-
-========== JOIN ==========
-.join__title
-Subscribe To Receive <br>
-The Latest Updates
-
-.join__input placeholder
-Enter email
-
-.join__button
-Subscribe
-
-
-========== TESTIMONIAL ==========
-.section__title
-Customer Opinions
-
-.testimonial__title .testimonial__description
-Rial Loz
-The best website to buy books, the purchase 
-is very easy to make and has great discounts.
-
-
-========== FOOTER ==========
-.footer__logo
-E-Book
-
-.footer__description
-Find and explore the best <br>
-eBooks from all your <br>
-favorite writers.
-
-footer__title .footer__link
-About
- Awards
- FAQs
- Privacy policy
- Terms of services
-
-Company
- Blogs
- Community
- Our team
- Help center
-
-Contact
- Av. Hacienda <br>
- Lima 4321, Perú 
-
- e.book@email.com <br>
- 0987-654-321
-
-Social
- https://www.facebook.com/
- https://www.instagram.com/
- https://twitter.com/
-
-.footer__copy
-&#169; All Rights Reserved By Bedimcode
+🌟 By Almog Arazi 🌟
