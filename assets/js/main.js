@@ -47,3 +47,20 @@ let swiperHome = new Swiper('.home__swiper', {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+
+
+const sr = ScrollReveal({
+ origin: 'top',
+ distance: '60px',
+ duration:2500,
+ delay: 400
+ // reset: true, //Animation repeat
+})
+
+sr.reveal('.home__data  , .discount__data, .section__data , .all')
+sr.reveal('.home__page ',{delay : 600})
+sr.reveal('.services__card',{interval: 100})
+sr.reveal('.services__card',{interval: 100})
+sr.reveal('.discount__img-1',{origin: 'left'})
+sr.reveal('.discount__img-2',{origin: 'right'})
+
