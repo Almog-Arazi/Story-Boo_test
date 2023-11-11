@@ -57,7 +57,7 @@ const sr = ScrollReveal({
  // reset: true, //Animation repeat
 })
 
-sr.reveal('.home__data  , .discount__data, .section__data , .all')
+sr.reveal('.home__data  , .discount__data, .section__data , .card-container')
 sr.reveal('.home__page ',{delay : 600})
 sr.reveal('.services__card',{interval: 100})
 sr.reveal('.services__card',{interval: 100})
