@@ -61,6 +61,8 @@ sr.reveal('.home__data  , .discount__data, .section__data , .card-container')
 sr.reveal('.home__page ',{delay : 600})
 sr.reveal('.services__card',{interval: 100})
 sr.reveal('.services__card',{interval: 100})
+sr.reveal('.styles__section',{interval: 100})
+sr.reveal('.footer',{interval: 100})
 sr.reveal('.discount__img-1',{origin: 'left'})
 sr.reveal('.discount__img-2',{origin: 'right'})
 
