@@ -1,0 +1,691 @@
+/*=============== GOOGLE FONTS ===============*/
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Paytone+One&family=Ubuntu:wght@400;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(0, 0%, 0%);
+  --title-color: hsl(230, 70%, 16%);
+  --text-color: hsl(230, 16%, 45%);
+  --border-color: hsl(230, 50%, 90%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(51, 100%, 96%);
+  --container-color: hsl(230, 100%, 97%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Ubuntu", sans-serif;
+  --second-font: "League Spartan", serif;
+  --title-font: 'Paytone One', sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color .4s;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+	Color changes in some parts of 
+	the website, in dark theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 100%;
+  
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-family: var(--second-font);
+  margin-bottom: 2rem;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow .4s, background-color .4s ;
+  box-shadow: 0 0px 32px hsla(0,0%,0%,.1);
+ padding: 0rem rem;
+ transition: background-color .4s ;
+}
+
+
+.nav{
+ height: var(--header-height);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.nav__logo{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  width: auto;
+}
+
+.nav__logo i{
+  font-size: 1.25rem;
+  width: 100%;
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+}
+
+.nav__link{
+  color: var(--text-color);
+  transition: color .4s;
+  padding: 15px;
+  right: 0;
+}
+
+.logo_text{
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: var(--title-font);
+  display: flex;
+  left: 0;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 768px) {
+  .nav__menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    box-shadow: 0 -8px 32px hsla(0,0%,0%,.1);
+    padding: 1.25rem 4rem;
+    transition: background-color .4s ;
+  }
+
+
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link{
+  color: var(--text-color);
+  transition: color .4s;
+}
+
+.nav__link span{
+  display: none;
+}
+
+.nav__link i{
+  font-size: 1.25rem;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+}
+/* Add shadow header */
+
+
+/* Active link */
+
+
+/*=============== SEARCH ===============*/
+
+
+/* Show search */
+
+
+/*=============== LOGIN ===============*/
+
+
+/* Show login */
+
+
+/*=============== HOME ===============*/
+
+
+.home__swiper{
+   margin: initial;
+   padding-top: 70px;
+   padding-bottom: 300px;
+}
+
+.home__container{
+   padding-top: 2rem;
+   row-gap: 2.5rem;
+   margin-inline: 1.5rem;
+
+}
+
+.home__data{
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 240, 0.466);
+  border-radius: 5px;
+  padding: 30px;
+  border: 10px;
+  margin: 10px;
+}
+
+.home__title{
+   font-size:  var(--biggest-font-size);
+   margin-bottom: 1rem;
+}
+
+.home__description{
+   margin-bottom: 2rem;
+   font: weight 300px;;
+   color: black;
+   font-family: var(--h3-font-size);
+   margin-top: 2rem;
+}
+
+
+.home__image{
+   display: grid;
+}
+
+.home__article,
+.home__img{
+   width: 250px;
+   transition:  scale .4s;
+   padding-top: 10px;
+}
+ 
+.home__article{
+  scale: .8;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active{
+   scale: 1;
+}
+
+.home {
+  position: relative;
+  overflow: hidden; /* Optional: Ensures no overflow of content */
+}
+
+#homeVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the section completely */
+  z-index: -1; /* Make sure the video stays in the background */
+}
+
+
+.home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%; /* Adjust the height of the gradient overlay as needed */
+  background: linear-gradient(180deg, rgba(255, 255, 240, 0) 0%, rgba(255, 255, 240, 0.24) 25%, rgba(255, 255, 240, 0.98888) 100%);
+  opacity: 1;
+  transition: background 0.3s, opacity 0.3s;
+  margin: 0;
+}
+
+
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(64, 79, 163) ;
+  color: var(--white-color); /* Set your desired text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: box-shadow .4s;
+}
+
+/*=============== 3D cards ===============*/
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(197, 59, 59, 0.75);
+  filter: blur(2px);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card:hover .wrapper::after {
+  height: 120px;
+}
+
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+}
+
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
+
+/*=============== SERVICES ===============*/
+
+.services__container{
+ row-gap: 3rem;
+}
+
+.services__card{
+  text-align: center;
+}
+.services__card i{
+  display: block;
+  font-size: 3rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.services__description{
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+/*=============== DISCOUNT ===============*/
+.discount__container{
+row-gap: 3.5rem;
+background-color: antiquewhite;
+padding: 100px;
+}
+
+.discount__data{
+  text-align: center;
+}
+
+.discount__title{
+  margin-bottom: 1rem;
+}
+
+.discount__description{
+  margin-bottom: 2rem;
+}
+
+.discount__images{
+  display: flex;
+  justify-content: center;
+}
+
+.discount__img-1,
+.discount__img-2{
+width: 170px;
+}
+
+.discount__img-1{
+  transform: translateX(1rem) rotate(-10deg);
+}
+
+.discount__img-2{
+  transform: translateX(-1rem) rotate(+10deg);
+}
+
+/*=============== NEW ===============*/
+.section__description{
+  margin-bottom: 2rem;
+}
+
+
+.section__data{
+  text-align: center;
+  padding: 20px;
+}
+
+/*=============== styles ===============*/
+/*=============== styles ===============*/
+.styles__container {
+  row-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stlyes__title {
+  margin: 1rem;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.styles__section{
+  background-color: antiquewhite;
+
+}
+.style__img {
+  width: 150px;
+  border-radius: 25px;
+  margin: auto; /* Center the image horizontally */
+  display: block; /* Ensure the image is a block element for margin auto to work */
+}
+
+.style__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem; /* Add margin for spacing between cards */
+}
+
+/*=============== TESTIMONIAL ===============*/
+
+
+/*=============== FOOTER ===============*/
+.footer {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 50px; /* Adjust spacing between logo and text */
+}
+
+.footer hr {
+  width: 100%; /* Adjust the width of the horizontal line */
+}
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 768px) {
+ .container{
+  margin-inline: 1rem;
+ }
+
+ .discount__container{
+  margin-inline: 0rem;
+  padding: 50px;
+ }
+
+ .nav__menu{
+  padding-inline: 3rem;
+ }
+
+.discount__img-1{
+  width: 150px;
+  
+}
+.discount__img-2{
+  width: 140px;
+ }
+
+ .discount__description{
+  font-size: 20px;
+ }
+
+ .discount__data{
+  width: 100%;
+  height: 100%;
+ }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+ .services__container{
+  grid-template-columns:repeat(3,max-content);
+  justify-content: center;
+  column-gap: 1rem;
+ }
+
+ .services__description{
+  width: 350px;
+ }
+ .discount__img-1{
+  width: 280px;
+ }
+
+.discount__img-2{
+  width: 250px;
+ }
+
+ .discount__container{
+  grid-template-columns: 655px 500px;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .discount__description{
+  font-size: 1.5rem;
+  font-weight: bolder;
+ }
+
+ .story-boo-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #000; /* Adjust the border color and width as needed */
+  border-radius: 0.375rem; /* 3 is equivalent to rounded-3 in Bootstrap */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Adjust shadow as needed */
+  margin: 1rem auto; /* Center the image horizontally and add margin as needed */
+  display: block; /* Ensure the image is a block element for margin auto to work */
+}
+
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  margin-bottom: 5px; /* Adjust spacing between logo and text */
+}
+
+.footer hr {
+  width: 100%; /* Adjust the width of the horizontal line */
+}
+.home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%; /* Adjust the height of the gradient overlay as needed */
+  background: linear-gradient(180deg, rgba(255, 255, 240, 0) 0%, rgba(255, 255, 240, 0.24) 25%, rgba(255, 255, 240, 0.98) 100%);
+  opacity: 1;
+}
+
+}
+
+
+/* For large devices */
